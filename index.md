@@ -2,7 +2,13 @@
 
 This is documentation for **Hortus** : *an intelligent horticulturist*
 
-## Sample Configuration 
+## Configs 
+This section has all the basic configs and communication topics
+
+
+### Sample Configuration 
+
+Here is a sample config for the setup of app running on local unit that communicates with remote db.
 
 ```json
 {
@@ -20,7 +26,9 @@ This is documentation for **Hortus** : *an intelligent horticulturist*
 }
 ```
 
-## Influx data format
+### Influx data format
+
+Sample Influx db message body
 
 ```json
 [
@@ -40,7 +48,10 @@ This is documentation for **Hortus** : *an intelligent horticulturist*
 
 ```
 
-## MQTT topics
+### MQTT topics
 ```sh
 /Section/Subsection/plant1/0/sensor_name
 ```
+
+## Links
+(TO-DOs)[todos.md]
