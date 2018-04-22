@@ -54,4 +54,4 @@ Sample Influx db message body
 ```
 
 ## Links
-(TO-DOs)[https://github.com/devenpatel2/Hortus/blob/gh-pages/todos.md]
+[TO-DOs](todos.md)
