@@ -42,7 +42,5 @@ This is documentation for **Hortus** : *an intelligent horticulturist*
 
 ## MQTT topics
 ```sh
-/Section/Subsection/plant1/0/temperature
-/Section/Subsection/plant1/0/mositure
-/Section/Subsection/plant1/0/humidity
+/Section/Subsection/plant1/0/sensor_name
 ```
