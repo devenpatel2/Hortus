@@ -28,12 +28,12 @@ This is documentation for **Hortus** : *an intelligent horticulturist*
 	 "measurement": "sensor_name",
 	 "tags": {
 		 "home": "Section",
-		 "direction": Subsection",
+		 "direction": "Subsection",
 		 "pot": "plant1_0"
 	 },
-	 "time": 1231234131 (time in ns),
+	 "time": 1231234131,
 	 "fields": {
-		 "value": data
+		 "value": 123.00
 	 }
  }
 ]
