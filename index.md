@@ -56,5 +56,5 @@ Sample Influx db message body
 ```
 
 ## Links
-1 .[TO-DOs](todos.md)
-2 .[Modules](pi_modules.md)
+1. [TO-DOs](todos.md)
+2. [Modules](pi_modules.md)
