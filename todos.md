@@ -16,5 +16,5 @@ This page has a list of to-dos
 2. Library-arduino sketch modules
 
 # Links
-[Home](index.md)
-[Modules][pi-modules.md]
+1 [Home](index.md)
+2 [Modules](pi-modules.md)
