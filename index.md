@@ -1,7 +1,6 @@
 # Introduction
 
-This is documentation for **Hortus** : *an intelligent horticulturist*
-Below is an overview of the architecture of the system. 
+This is documentation for **Hortus** : *an intelligent horticulturist*. Below is an overview of the architecture of the system. 
 
 ![alt text](/images/architecture-v1.png "Overview")
 
