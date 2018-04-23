@@ -2,7 +2,7 @@
 
 This is documentation for **Hortus** : *an intelligent horticulturist*. Below is an overview of the architecture of the system. 
 
-![alt text](/images/architecture-v1.png "Overview")
+![Overview](images/architecture-v1.png "Overview")
 
 ## Configs 
 This section has all the basic configs and communication topics
