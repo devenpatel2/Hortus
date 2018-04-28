@@ -9,6 +9,7 @@ This page has a list of to-dos
 
 1. Inlfux client
 2. MQTT class
+3. Config Parser
 
 ## Arduino
 
