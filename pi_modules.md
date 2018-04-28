@@ -47,7 +47,6 @@ for plants in parser
 	 "user"   : "username",
 	 "passwd" : "passwd"
 	}
-}
 ```
 
 ## Logging
