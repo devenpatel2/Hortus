@@ -52,7 +52,7 @@ Sample Influx db message body
 
 ### MQTT topics
 ```sh
-/Section/Subsection/plant1/0/sensor_name
+/Subsection/plant1/0/sensor_name
 ```
 
 ## Links
