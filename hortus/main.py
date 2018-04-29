@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 #! -*- coding:utf-8
 
-from parser import Parser
+from config_reader import ConfigReader
 from logger import Logger
 from hortus import Hortus
-from exceptions import InfluxException, MQTTException
-import argparse
+from h_exceptions import InfluxException, MQTTException
 
-def hortus():
+import argparse
+import logging
+import os
+import sys
+
+def run_app():
 
     """ Entry point for the command line tool. """
     parser = argparse.ArgumentParser(
@@ -41,43 +45,41 @@ def hortus():
 
     log_file = cmdline.logfile
     
-    log = Logger(level, log_file)
+    log = Logger(level, log_file).get_logger()
 
     config_filename = os.path.expanduser(cmdline.config)
     log.info("Using config file: {}".format(config_filename))
 
-    shutdownhandler = util.ShutdownHandler()
-
-    config = util.open_config(config_filename)
-
+    config = ConfigReader(config_filename)
+ 
     with Hortus(config) as hortus:
 
         try:
             hortus.init_mqtt()
+
         except MQTTException as e:
             log.fatal("Failed to itialize mqtt : {}".format(str(e)))
             log.info("Exiting...")
             sys.exit(0)
 
-        try
+        try:
             hortus.init_influxDB()
 
         except InfluxException as e:
 
-            log.warn("Failed to connect to database. {}"format(str(e)))
+            log.warn("Failed to connect to database. {}".format(str(e)))
             log.info("Attempt reconnect afer 30 min")
 
-        while True:
-            if shutdownhandler.shutdown:
-                break
-            
+        try:
+
             hortus.run()
 
-            sleep(1)
+        except ShutDownException as e:
 
-    log.info("shutting down Hortus")
+            log.info("shutting down Hortus : {}".format(str(e)))
+        
+    
+if __name__ == "__main__":
 
-if __name__ == "__main__"
-
-    hortus()
+    run_app()
     

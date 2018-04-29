@@ -22,4 +22,6 @@ class Logger:
         self.log = logging.getLogger(os.path.basename(__file__).split('.')[0])
         self.log.setLevel(self._level)
 
-
+    
+    def get_logger(self):
+        return self.log
