@@ -7,8 +7,8 @@
 
 ## PYTHON
 # Byte-compiled / optimized / DLL files
+*.pyc
 __pycache__/
-*.py[cod]
 build/
 develop-eggs/
 dist/
