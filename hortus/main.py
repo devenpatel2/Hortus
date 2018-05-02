@@ -4,7 +4,7 @@
 from config_reader import ConfigReader
 from logger import Logger
 from hortus import Hortus
-from h_exceptions import InfluxException, MQTTException
+from h_exceptions import CirrusException, MQTTException
 
 import argparse
 import logging
@@ -63,11 +63,11 @@ def run_app():
             sys.exit(0)
 
         try:
-            hortus.init_influxDB()
+            hortus.init_cirrusClient()
 
-        except InfluxException as e:
+        except CirrusException as e:
 
-            log.warn("Failed to connect to database. {}".format(str(e)))
+            log.warn("Failed to connect to cirrus. {}".format(str(e)))
             log.info("Attempt reconnect afer 30 min")
 
         try:

@@ -15,7 +15,7 @@ class Hortus:
     def init_mqtt(self):
         pass
 
-    def init_influxDB(self):
+    def init_cirrusClient(self):
         pass
 
     def run(self):
