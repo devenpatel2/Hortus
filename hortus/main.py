@@ -55,20 +55,21 @@ def run_app():
     with Hortus(config) as hortus:
 
         try:
-            hortus.init_mqtt()
-
-        except MQTTException as e:
-            log.fatal("Failed to itialize mqtt : {}".format(str(e)))
-            log.info("Exiting...")
-            sys.exit(0)
-
-        try:
             hortus.init_cirrusClient()
 
         except CirrusException as e:
 
             log.warn("Failed to connect to cirrus. {}".format(str(e)))
             log.info("Attempt reconnect afer 30 min")
+
+
+        try:
+            hortus.init_mqtt()
+
+        except MQTTException as e:
+            log.fatal("Failed to itialize mqtt : {}".format(str(e)))
+            log.info("Exiting...")
+            sys.exit(0)
 
         try:
 

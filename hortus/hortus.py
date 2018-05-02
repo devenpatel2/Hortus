@@ -4,7 +4,9 @@ class Hortus:
 
     def __init__(self, config):
 
-        pass
+        self._config_mqtt = config.mqtt
+        self._config_cirrus = config.cirrus
+        self._config_setup = config.setup
 
     def __enter__(self):
         return self
@@ -13,8 +15,9 @@ class Hortus:
         pass
 
     def init_mqtt(self):
-        pass
+                  
 
+        
     def init_cirrusClient(self):
         pass
 
