@@ -15,18 +15,18 @@ Here is a sample config for the setup of app running on local unit that communic
 ```json
 {
 "Layout":{
-	 "Subsection" : [
-			{0 : "plant1"},
-			{1 : "plant2"}
-			]
-		},
+	"Subsection" : [
+		{0 : "plant1"},
+		{1 : "plant2"}
+		]
+	},
 "Cirrus" :{
-	 "ip"     : "influxdb_ip",
-	 "user"   : "username",
-	 "passwd" : "passwd"
+	"ip"     : "influxdb_ip",
+	"user"   : "username",
+	"passwd" : "passwd"
 	},
 "MQTT" :{
-   "host" : "broker_uip",
+	"host" : "broker_uip",
    "port" :  "port",
    "ca_path" : "ca_path"
 	} 
