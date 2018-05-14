@@ -1,13 +1,20 @@
 {
-"Section":{
+
+"Layout":{
 	"Subsection" : [
-		{0 : "plant1"},
-		{1 : "plant2"}
+		{"0" : "plant1"},
+		{"1" : "plant2"}
 		]
 	},
-"Database" :{
+"Cirrus": {
 	 "ip"     : "influxdb_ip",
 	 "user"   : "username",
 	 "passwd" : "passwd"
-	}
+	},
+
+"MQTT" :{
+   "host" : "127.0.0.1",
+   "port" :  "1833",
+   "ca_path" : "/etc/mqtt"
+	}   
 }
