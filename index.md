@@ -14,20 +14,27 @@ Here is a sample config for the setup of app running on local unit that communic
 
 ```json
 {
-"Section":{
+"Layout":{
 	 "Subsection" : [
 			{0 : "plant1"},
 			{1 : "plant2"}
 			]
 		},
-"Database" :{
+"Cirrus" :{
 	 "ip"     : "influxdb_ip",
 	 "user"   : "username",
 	 "passwd" : "passwd"
-	}
+	},
+"MQTT" :{
+   "host" : "broker_uip",
+   "port" :  "port",
+   "ca_path" : "ca_path"
+	} 
 }
 ```
-
+- *Layout* : Config parameters for plants in local site.
+- *Cirrus* : Database credentials and config parameters. 
+- *MQTT* : Mqtt broker parameters.
 ### Influx data format
 
 Sample Influx db message body
