@@ -6,7 +6,7 @@ class Hortus:
 
         self._config_mqtt = config.mqtt
         self._config_cirrus = config.cirrus
-        self._config_setup = config.setup
+        self._config_layout = config.layout
 
     def __enter__(self):
         return self
@@ -15,7 +15,7 @@ class Hortus:
         pass
 
     def init_mqtt(self):
-                  
+        pass              
 
         
     def init_cirrusClient(self):
